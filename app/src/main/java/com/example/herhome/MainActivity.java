@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void uploadFileonS3(){
         // KEY and SECRET are gotten when we create an IAM user above
-        BasicAWSCredentials credentials = new BasicAWSCredentials("AKIAITLTSNUYBZKNJRIQ", "IdKtkaZT/pWXXYfWR5XSTh7iJ/mMIPosGktZL6E0");
+
         AmazonS3Client s3Client = new AmazonS3Client(credentials);
 
         TransferUtility transferUtility =
